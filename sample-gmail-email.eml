@@ -1,0 +1,112 @@
+Delivered-To: sklok11@gmail.com
+Received: by 2002:a05:7011:f8d:b0:348:d428:9672 with SMTP id hh13csp855294mdb;
+        Tue, 2 May 2023 13:14:46 -0700 (PDT)
+X-Google-Smtp-Source: ACHHUZ6QU+Xvtn7B7d1Kgez09rYkg0PHiunROezdrKgun/jxk8yHDlTd393Wi/4xnPQjojmrV9cv
+X-Received: by 2002:a25:420f:0:b0:b9e:4fbc:8a7f with SMTP id p15-20020a25420f000000b00b9e4fbc8a7fmr6057267yba.1.1683058486750;
+        Tue, 02 May 2023 13:14:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1683058486; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JVfe/sbyBS8AieXDSGWTg7lB3c/HdjpF/vBeefbxOxcMJHkZe02EnQNCGbjx0aCMpn
+         /CF7QAxU5Uvxqx0DX/biK88pou2KdIb0LqpU05Hw+tROQ1vubmGPpJCSnEuIKp6NUF/C
+         EWEKP+KE+z6efJrtQPwQaRlo4r+KrVJ5I8Z9L1uNwh5aE5xdDl0pEsz2QE9yL+jxtKfM
+         SFwrVBpUrLyb7atC60/5Qlmsr1I3fknlalbbn0Ctd1n/KmiCtrKmkh9mQkBK0ukcukgp
+         BuWBvM4sZ/QsXIB8nkXYF0gZqymPcEXa8mrtkEa8251cSklNgdJ+P45MHszm4SmGtg8T
+         e4AA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=bm78R4CGsOENhlUzKkjhHvqtxVQILgRINfVmNHlAsHU=;
+        b=batKL6QQkzDhiZ6Zz3yAalfPdGMcG1f3YJSpai/u5ejNyJ6EQCHYvdHGEpazEj8zKF
+         YKkH+KVrZDqDCTJzAIWXvS9zgmbnimM80VkBAMDTWlCuV9kchS0JBePWPH7cdxyvi9Nn
+         HGi0Fy4UwMuRdQ1mt7nNoVTZcFVVWbuYf1oSUbZRXrzRxQ6esy1xj5wE46oMCp/rqu0o
+         eitnInL0//9cRWIN9+nCeSkTUwbNQC1wn4r72Eeb5IdA7DXBn2lOvl2GG8jH7PnXyWgx
+         /C6N2QbgPp2A4YjWyMHq82xxQO5cFTEZ/5i5iXMlhWJ0Yu9c4vYXH16bR4V3cDZQWhQa
+         8j4A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@careermovement.com header.s=mx header.b=ey7iGPgc;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=ofWgJzQN;
+       spf=fail (google.com: domain of bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com does not designate 166.78.70.70 as permitted sender) smtp.mailfrom="bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=careermovement.com
+Return-Path: <bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com>
+Received: from m70-70.mailgun.net (m70-70.mailgun.net. [166.78.70.70])
+        by mx.google.com with UTF8SMTPS id u66-20020a25dd45000000b00b9233567cbdsi20713032ybg.87.2023.05.02.13.14.46
+        for <sklok11@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 02 May 2023 13:14:46 -0700 (PDT)
+Received-SPF: fail (google.com: domain of bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com does not designate 166.78.70.70 as permitted sender) client-ip=166.78.70.70;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@careermovement.com header.s=mx header.b=ey7iGPgc;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=ofWgJzQN;
+       spf=fail (google.com: domain of bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com does not designate 166.78.70.70 as permitted sender) smtp.mailfrom="bounce+dd5fb1.fe1ec6-sklok11=gmail.com@careermovement.com";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=careermovement.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=careermovement.com;
+ q=dns/txt; s=mx; t=1683058486; x=1683065686; h=Content-Transfer-Encoding:
+ Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version:
+ Date: Sender: Sender: X-Feedback-Id;
+ bh=bm78R4CGsOENhlUzKkjhHvqtxVQILgRINfVmNHlAsHU=;
+ b=ey7iGPgc7dVrYNttTpzWb4iuGS810XepJTx13lK0z+/4RR8r6d5bYtiVbLMLb1J91C+SkccpCL/iHo5KqoT77ORRkbVxRxv0ZlRz2BA/Xnzfj0omMmIUVR/Xabv0zf4gYLi3TTU6vQ3IEuXwgWX+sp1Gl6VlCDb6IMsDjrpLtS4=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org;
+ q=dns/txt; s=mg; t=1683058486; x=1683065686; h=Content-Transfer-Encoding:
+ Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version:
+ Date: Sender: Sender: X-Feedback-Id;
+ bh=bm78R4CGsOENhlUzKkjhHvqtxVQILgRINfVmNHlAsHU=;
+ b=ofWgJzQNAEluHr6RBWMREk7edp8uvD91nyAB+LYFOTpsTZdrT6/wr3l0ULQojxWe3WJSoBdEF4EsP2iI20OaeaHb9pf7Qt7NFU7x3vALSczjrdiDWeBOmrVhtjzJ8htdV6x6Fh5IbEJjrNLCUwhntrIpDXBaTY5OdlmioCgIwu0=
+X-Feedback-Id: jquan@careermovement.com::5be0c045fa60950001977f77:mailgun
+X-Mailgun-Sending-Ip: 166.78.70.70
+X-Mailgun-Sid: WyJhZjJjNiIsInNrbG9rMTFAZ21haWwuY29tIiwiZmUxZWM2Il0=
+Received: from <unknown> (<unknown> []) by 283868e93ff8 with HTTP id
+ 64516f3693a7e63bd325711f; Tue, 02 May 2023 20:14:46 GMT
+Sender: jquan@careermovement.com
+Date: Tue, 02 May 2023 20:14:46 +0000
+Mime-Version: 1.0
+Subject: Remote - Full Stack .NET opening
+From: Joseph Quan <jquan@careermovement.com>
+To: sklok11@gmail.com
+X-Mailgun-Track-Opens: true
+X-Mailgun-Track-Clicks: true
+X-Mailgun-Variables: {"EmailCampaignContactId": "c0c69dd9-3fca-43af-d96c-a1d9494bdb08",
+ "EmailCampaignId": "ba4d3603-252c-4da6-80dc-d3d3494bdb08", "OrgId":
+ "j9wft6f5b5grazxmthas4ymwhr"}
+Message-Id: <20230502201446.bd2325b9244fcecd@careermovement.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><HTML><HEAD><STYLE>p { mar=
+gin: 0; min-height: 1em; padding: 0; } table.crelateTable{border: solid 1px=
+ #000; border-collapse: collapse; } table.crelateTable td { border: solid 1=
+px #000; padding: 4px 2px; } .crelateTable-td { border: solid 1px #000; pad=
+ding: 4px 2px; }</STYLE></HEAD><BODY style=3D'font-family: Arial, Helvetica=
+, sans-serif;'><p><span class=3D"ui-provider gr b c d e f g h i j k l m n o=
+ p q r s t u v w x y z ab ac ae af ag ah ai aj ak"><p>Hi Serge,</p><p><br /=
+></p><p>Our client is the visionary creator of a top-tier marketing platfor=
+m, partnered with renowned brands like Macy's, Discover, and Marriott. They=
+ are seeking a full stack .NET Developer who will play a pivotal role in sh=
+aping the future of marketing technology.</p><p><br /></p><p>The ideal cand=
+idate will be strong with Angular 7+, C# &amp; .NET, and the role is full-t=
+ime, direct, hire, &amp; fully remote.</p><p><br /></p><p>If you are intere=
+sted, please feel free to share an updated resume and we=E2=80=99d be happy=
+ tp follow up and talk further about this role. </p></span></p><p><br /></p=
+><p>Best,<span id=3D"signature"><p><br /></p><p><strong><span style=3D"colo=
+r: black;">Joseph Quan </span></strong><strong><span style=3D"color: black;=
+">|</span></strong><strong><span style=3D"color: black;"> </span></strong><=
+strong><em><span style=3D"color: rgb(68, 114, 196);">Technical Recruiter</s=
+pan></em></strong></p><p><span style=3D"color: rgb(31, 73, 125);">703 N. Do=
+uglas Street, El Segundo, CA 90245</span><strong><em><span style=3D"color: =
+rgb(31, 73, 125);"></span></em></strong></p><p><span style=3D"color: black;=
+"><a target=3D"_blank" href=3D"http://email.careermovement.com/c/eJxsz7Fuwy=
+AQxvGnsTciOA5iBoYqaqRMfYbjDuw0IY4wato-fZWlUqWun77f8H-tdL4eqN7pPN8O660T95NE1=
+uyDSFC2MCm0VJQEz4qMBAyYJOlp_GNPEhOhWK-tAgesUMirSQsrsWJ_0VubTxLfw6N0X1xyc6Pv=
+z9oX2vCrPpY2SizZZPZjjsZPVrsJJz8uMbFBp53sM4SMBWkiSmiLL6Xsvch4jqDBaqcBtEH0uyR=
+gwaUAiIUzy4CaqeXc6vqRa771Ha91vMal9_s22JcBjgMc_7m0uF2u68WYAfX8jH6uPwEAAP__Uq=
+Ving"><span style=3D"color: blue;">https://careermovement.com/</span></a> <=
+/span></p></span></p><br/><br /><p><a href=3D"http://email.careermovement.c=
+om/u/eJxUz7FOAzEMgOGn6W2pfI6TNEMGVDF04hkcO7mWNncojSjw9AgGJNZf-ob_ufHlduT2xp=
+dlPW7rYBknTQLio2o0tgobslyNRi-GZ40UKWuGw_TPnjRlJrUerEGHYkjZmwOoGLVq_9BLX06aX=
+uOjDl9ddkvnr482znynz_Y490lTLXMRP51TBgmzwyoUysGiVoESrA9qQywUaLokBLTgABFmIr_P=
+ihZdjkhUpYjuCIR7Kb1t76WVdexla1NP9-ttu87zjmD5mfitI-3w6TsAAP__eJBUKg">Click h=
+ere to unsubscribe from future emails</a></p><img width=3D"1px" height=3D"1=
+px" alt=3D"" src=3D"http://email.careermovement.com/o/eJxUzzFuKyEQgOHTeDusY=
+RhYKKisV7h6ZxhmYO3Y7EZ4FSc5feQmUtpf-or_X-fr_cT9na_LetrWnWU_axaQkFSTcU3YkONm=
+NAUxbDVRoqIF4vTHnjUXJnUBnEGPYkg5mAgqRp26X_R_LGfNb-nZ9tB88cvg78--X_hBX_15GZP=
+mVm2VMNVsQ3TgI8UwXXK1HmY7p7kCWsBCAW20VKoHiozzdM0I6MADIliicCyKDn1JSNSkih4IhE=
+eto28ftdd1P8rWp5Eft_t2s_ZAsLyOXvUnAAD___XGVIg"></BODY></HTML>
